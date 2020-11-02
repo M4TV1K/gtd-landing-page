@@ -1,0 +1,339 @@
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Black";
+    src: url(font/Roboto-Black.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Roboto Black", sans-serif;
+}
+h4, p {
+    font-family: "Roboto Regular", sans-serif;
+}
+
+h1 {
+    font-size: 100px;
+    color: #4F4D53;
+}
+h2 {
+    font-size: 64px;
+    color: #E8BE02;
+}
+h3 {
+    font-size: 20px;
+    color: #E8BE02;
+}
+h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #4F4D53;
+    text-align: center;
+    width: 54.25vw;
+}
+
+.gray-background {
+    background-color: #4F4D53;
+}
+.content-margin {
+    padding-left: 20vw;
+}
+.content-width {
+    width: 60vw;
+}
+.space-between-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 48px;
+}
+#gtdLogo {
+    max-width: 43px;
+    max-height: 23px;
+}
+
+#contentHolder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}
+#backgroundImage {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#content {
+    width: 61vw;
+}
+#header {
+    margin-top: 13vw;
+    margin-bottom: 0;
+}
+
+#historyHolder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#imagesHolder {
+    margin-top: 7vw;
+}
+
+#footer {
+    margin-top: 7vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    border-top: 12px solid #E8BE02;
+    height: 320px;
+}
+
+#itemsHolder {
+    margin-top: 1.75vw;
+}
+
+#footer > h4 {
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+    #header {
+        margin-top: 12vw;
+        font-size: 9vw;
+    }
+    p {
+        width: 59vw;
+    }
+    #content, .content-width, .space-between-holder {
+        width: 70vw;
+    }
+    .content-margin {
+        padding-left: 15vw;
+    }
+    #imagesHolder {
+        margin-top: 4vw;
+    }
+    #footer {
+        height: 22.5vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 7vw;
+    }
+    p {
+        font-size: 2vw;
+    }
+    #imagesHolder {
+        margin-top: 16vw;
+    }
+    #imagesHolder > img {
+        width: 17vw;
+        height: 17vw;
+    }
+    #footer {
+        height: 25vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 2.25vw;
+    }
+    h4 {
+        font-size: 1.75vw;
+    }
+    #imagesHolder {
+        margin-top: 9vw;
+    }
+    #itemsHolder {
+        margin-top: 3vw;
+    }
+    #footer {
+        height: 30vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 7.5vw;
+    }
+    h3 {
+        font-size: 3.75vw;
+    }
+    h4 {
+        font-size: 2.75vw;
+    }
+    p {
+        font-size: 3vw;
+        width: 72vw;
+    }
+
+    #content, .content-width, .space-between-holder {
+        width: 80vw;
+    }
+    .content-margin {
+        padding-left: 10vw;
+    }
+
+    #contentHolder {
+        position: relative;
+        overflow-x: hidden;
+    }
+    #backgroundImage {
+        width: 160%;
+    }
+    #header {
+        text-align: center;
+        margin-top: 22vw;
+        font-size: 10vw;
+    }
+
+    #imagesHolder {
+        margin-top: 25vw;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    #imagesHolder > img {
+        width: 30vw;
+        height: 30vw;
+        margin: 2vw;
+    }
+
+    #footer {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+    #itemsHolder {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    #itemsHolder > article {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 33vw;
+    }
+    .mobile-second-row {
+        margin-top: 10vw;
+    }
+    #footer > h4 {
+        margin-top: 10vw;
+        margin-bottom: 4vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h2 {
+        font-size: 9vw;
+    }
+    h3 {
+        font-size: 4.25vw;
+    }
+    h4 {
+        font-size: 3.25vw;
+    }
+    p {
+        font-size: 3.5vw;
+        width: 85vw;
+    }
+    #content, .content-width, .space-between-holder {
+        width: 85vw;
+    }
+    .content-margin {
+        padding-left: 7.5vw;
+    }
+    nav {
+        height: 9vw;
+    }
+    #gtdLogo {
+        width: 9vw;
+    }
+
+    #backgroundImage {
+        width: 175%;
+    }
+    #header {
+        margin-top: 24vw;
+        font-size: 10.5vw;
+    }
+    #imagesHolder {
+        margin-top: 28vw;
+    }
+    #imagesHolder > img {
+        width: 32vw;
+        height: 32vw;
+        margin: 2vw;
+    }
+
+    #itemsHolder {
+        margin-top: 4vw;
+    }
+    #footer > h4 {
+        margin-top: 12vw;
+    }
+}
